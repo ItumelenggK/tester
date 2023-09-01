@@ -1,0 +1,247 @@
+:root{
+    --primary: #ddd;
+    --dark:#333;
+    --shadow: 0 1px 5px rgb(104,104,104,0.8);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: var(--dark);
+}
+
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.button{
+    background: var(--dark);
+    color: #fff;
+    padding: 10px;
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap:20px;
+}
+
+.main-navigation ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+}
+.home{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.about{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+}
+.service{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.contact{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.home:hover{
+    background: var(--dark);
+    color: #fff;
+}
+
+.about:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.service:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.contact:hover{
+    background: var(--dark);
+    color: #fff;
+}
+
+.globe:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.timeline:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.Internet:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.protocols:hover{
+    background: var(--dark);
+    color: #fff;
+}
+/* Top container */ 
+.Top-container{
+    display: grid;
+    grid-gap:20px;
+    grid-template-areas: 
+    "main main top-box";
+}
+
+.main{
+    grid-area: main;
+    min-height: 400px;
+    background: url(premium_photo-1661421687248-7bb863c60723.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: block;
+    flex-direction: column;
+    align-items:start;
+    justify-content: end;
+    box-shadow: var(--shadow);
+}
+
+.main h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #fff;
+    padding-left: 60%;
+    padding-bottom: 2%;
+    padding-right: 200px;
+}
+
+.main p{
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: #fff;
+    padding-left: 60%;
+    
+}
+
+.top-box{
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    height: 250px;
+}
+
+.top-box a{
+    grid-area: top-box;
+}
+
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+.timeline {
+  background:var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+.globe{
+    background:var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.Internet{
+    background:var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);   
+}
+
+.protocols{
+    background:var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.evolution{
+    background:var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow); 
+}
+.webapp{
+    background:var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow); 
+}
+.client {
+    background:var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow); 
+}
+.client:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.webapp:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.evolution:hover{
+    background: var(--dark);
+    color: #fff;
+}
+.portfolio{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+.portfolio img{
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+.footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.button{
+    padding: 20px; 
+    font-size: 16px; 
+    background-color: white; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
